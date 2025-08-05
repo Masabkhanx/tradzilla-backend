@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import random
+import os
+os.environ["PYTHONHTTPSVERIFY"] = "0"
 
 app = FastAPI()
 
