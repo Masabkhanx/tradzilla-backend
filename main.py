@@ -35,7 +35,3 @@ def get_signals():
         signals.append(signal)
     return {"status": "success", "data": signals}
 
-# ✅ REQUIRED TO START BACKEND ON RAILWAY
-if _name_ == "_main_":
-    import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000
